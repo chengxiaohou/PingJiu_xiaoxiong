@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DA9B2FF21AE67E3006BDD4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA9B2FE21AE67E3006BDD4E /* AppDelegate.m */; };
+		9DA9B30221AE67E3006BDD4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA9B30121AE67E3006BDD4E /* ViewController.m */; };
+		9DA9B30521AE67E3006BDD4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA9B30321AE67E3006BDD4E /* Main.storyboard */; };
+		9DA9B30721AE67E5006BDD4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA9B30621AE67E5006BDD4E /* Assets.xcassets */; };
+		9DA9B30A21AE67E5006BDD4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA9B30821AE67E5006BDD4E /* LaunchScreen.storyboard */; };
+		9DA9B30D21AE67E5006BDD4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA9B30C21AE67E5006BDD4E /* main.m */; };
+		9DA9B31721AE67E5006BDD4E /* PingJiuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA9B31621AE67E5006BDD4E /* PingJiuTests.m */; };
+		9DA9B32221AE67E5006BDD4E /* PingJiuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA9B32121AE67E5006BDD4E /* PingJiuUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DA9B31321AE67E5006BDD4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DA9B2F221AE67E3006BDD4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DA9B2F921AE67E3006BDD4E;
+			remoteInfo = PingJiu;
+		};
+		9DA9B31E21AE67E5006BDD4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DA9B2F221AE67E3006BDD4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DA9B2F921AE67E3006BDD4E;
+			remoteInfo = PingJiu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9DA9B2FA21AE67E3006BDD4E /* PingJiu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingJiu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA9B2FD21AE67E3006BDD4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9DA9B2FE21AE67E3006BDD4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9DA9B30021AE67E3006BDD4E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9DA9B30121AE67E3006BDD4E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9DA9B30421AE67E3006BDD4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DA9B30621AE67E5006BDD4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DA9B30921AE67E5006BDD4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DA9B30B21AE67E5006BDD4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA9B30C21AE67E5006BDD4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9DA9B31221AE67E5006BDD4E /* PingJiuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingJiuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA9B31621AE67E5006BDD4E /* PingJiuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PingJiuTests.m; sourceTree = "<group>"; };
+		9DA9B31821AE67E5006BDD4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA9B31D21AE67E5006BDD4E /* PingJiuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingJiuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA9B32121AE67E5006BDD4E /* PingJiuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PingJiuUITests.m; sourceTree = "<group>"; };
+		9DA9B32321AE67E5006BDD4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DA9B2F721AE67E3006BDD4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA9B30F21AE67E5006BDD4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA9B31A21AE67E5006BDD4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DA9B2F121AE67E3006BDD4E = {
+			isa = PBXGroup;
+			children = (
+				9DA9B2FC21AE67E3006BDD4E /* PingJiu */,
+				9DA9B31521AE67E5006BDD4E /* PingJiuTests */,
+				9DA9B32021AE67E5006BDD4E /* PingJiuUITests */,
+				9DA9B2FB21AE67E3006BDD4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DA9B2FB21AE67E3006BDD4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DA9B2FA21AE67E3006BDD4E /* PingJiu.app */,
+				9DA9B31221AE67E5006BDD4E /* PingJiuTests.xctest */,
+				9DA9B31D21AE67E5006BDD4E /* PingJiuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DA9B2FC21AE67E3006BDD4E /* PingJiu */ = {
+			isa = PBXGroup;
+			children = (
+				9DA9B2FD21AE67E3006BDD4E /* AppDelegate.h */,
+				9DA9B2FE21AE67E3006BDD4E /* AppDelegate.m */,
+				9DA9B30021AE67E3006BDD4E /* ViewController.h */,
+				9DA9B30121AE67E3006BDD4E /* ViewController.m */,
+				9DA9B30321AE67E3006BDD4E /* Main.storyboard */,
+				9DA9B30621AE67E5006BDD4E /* Assets.xcassets */,
+				9DA9B30821AE67E5006BDD4E /* LaunchScreen.storyboard */,
+				9DA9B30B21AE67E5006BDD4E /* Info.plist */,
+				9DA9B30C21AE67E5006BDD4E /* main.m */,
+			);
+			path = PingJiu;
+			sourceTree = "<group>";
+		};
+		9DA9B31521AE67E5006BDD4E /* PingJiuTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DA9B31621AE67E5006BDD4E /* PingJiuTests.m */,
+				9DA9B31821AE67E5006BDD4E /* Info.plist */,
+			);
+			path = PingJiuTests;
+			sourceTree = "<group>";
+		};
+		9DA9B32021AE67E5006BDD4E /* PingJiuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9DA9B32121AE67E5006BDD4E /* PingJiuUITests.m */,
+				9DA9B32321AE67E5006BDD4E /* Info.plist */,
+			);
+			path = PingJiuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DA9B2F921AE67E3006BDD4E /* PingJiu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA9B32621AE67E5006BDD4E /* Build configuration list for PBXNativeTarget "PingJiu" */;
+			buildPhases = (
+				9DA9B2F621AE67E3006BDD4E /* Sources */,
+				9DA9B2F721AE67E3006BDD4E /* Frameworks */,
+				9DA9B2F821AE67E3006BDD4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PingJiu;
+			productName = PingJiu;
+			productReference = 9DA9B2FA21AE67E3006BDD4E /* PingJiu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DA9B31121AE67E5006BDD4E /* PingJiuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA9B32921AE67E5006BDD4E /* Build configuration list for PBXNativeTarget "PingJiuTests" */;
+			buildPhases = (
+				9DA9B30E21AE67E5006BDD4E /* Sources */,
+				9DA9B30F21AE67E5006BDD4E /* Frameworks */,
+				9DA9B31021AE67E5006BDD4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DA9B31421AE67E5006BDD4E /* PBXTargetDependency */,
+			);
+			name = PingJiuTests;
+			productName = PingJiuTests;
+			productReference = 9DA9B31221AE67E5006BDD4E /* PingJiuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9DA9B31C21AE67E5006BDD4E /* PingJiuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA9B32C21AE67E5006BDD4E /* Build configuration list for PBXNativeTarget "PingJiuUITests" */;
+			buildPhases = (
+				9DA9B31921AE67E5006BDD4E /* Sources */,
+				9DA9B31A21AE67E5006BDD4E /* Frameworks */,
+				9DA9B31B21AE67E5006BDD4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DA9B31F21AE67E5006BDD4E /* PBXTargetDependency */,
+			);
+			name = PingJiuUITests;
+			productName = PingJiuUITests;
+			productReference = 9DA9B31D21AE67E5006BDD4E /* PingJiuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DA9B2F221AE67E3006BDD4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "小熊";
+				TargetAttributes = {
+					9DA9B2F921AE67E3006BDD4E = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					9DA9B31121AE67E5006BDD4E = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 9DA9B2F921AE67E3006BDD4E;
+					};
+					9DA9B31C21AE67E5006BDD4E = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 9DA9B2F921AE67E3006BDD4E;
+					};
+				};
+			};
+			buildConfigurationList = 9DA9B2F521AE67E3006BDD4E /* Build configuration list for PBXProject "PingJiu" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DA9B2F121AE67E3006BDD4E;
+			productRefGroup = 9DA9B2FB21AE67E3006BDD4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DA9B2F921AE67E3006BDD4E /* PingJiu */,
+				9DA9B31121AE67E5006BDD4E /* PingJiuTests */,
+				9DA9B31C21AE67E5006BDD4E /* PingJiuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DA9B2F821AE67E3006BDD4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA9B30A21AE67E5006BDD4E /* LaunchScreen.storyboard in Resources */,
+				9DA9B30721AE67E5006BDD4E /* Assets.xcassets in Resources */,
+				9DA9B30521AE67E3006BDD4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA9B31021AE67E5006BDD4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA9B31B21AE67E5006BDD4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DA9B2F621AE67E3006BDD4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA9B30221AE67E3006BDD4E /* ViewController.m in Sources */,
+				9DA9B30D21AE67E5006BDD4E /* main.m in Sources */,
+				9DA9B2FF21AE67E3006BDD4E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA9B30E21AE67E5006BDD4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA9B31721AE67E5006BDD4E /* PingJiuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA9B31921AE67E5006BDD4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA9B32221AE67E5006BDD4E /* PingJiuUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DA9B31421AE67E5006BDD4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DA9B2F921AE67E3006BDD4E /* PingJiu */;
+			targetProxy = 9DA9B31321AE67E5006BDD4E /* PBXContainerItemProxy */;
+		};
+		9DA9B31F21AE67E5006BDD4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DA9B2F921AE67E3006BDD4E /* PingJiu */;
+			targetProxy = 9DA9B31E21AE67E5006BDD4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DA9B30321AE67E3006BDD4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DA9B30421AE67E3006BDD4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DA9B30821AE67E5006BDD4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DA9B30921AE67E5006BDD4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DA9B32421AE67E5006BDD4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9DA9B32521AE67E5006BDD4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DA9B32721AE67E5006BDD4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PingJiu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoxiong.PingJiu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DA9B32821AE67E5006BDD4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PingJiu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoxiong.PingJiu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9DA9B32A21AE67E5006BDD4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PingJiuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoxiong.PingJiuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PingJiu.app/PingJiu";
+			};
+			name = Debug;
+		};
+		9DA9B32B21AE67E5006BDD4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PingJiuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoxiong.PingJiuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PingJiu.app/PingJiu";
+			};
+			name = Release;
+		};
+		9DA9B32D21AE67E5006BDD4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PingJiuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoxiong.PingJiuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PingJiu;
+			};
+			name = Debug;
+		};
+		9DA9B32E21AE67E5006BDD4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PingJiuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoxiong.PingJiuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PingJiu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DA9B2F521AE67E3006BDD4E /* Build configuration list for PBXProject "PingJiu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA9B32421AE67E5006BDD4E /* Debug */,
+				9DA9B32521AE67E5006BDD4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DA9B32621AE67E5006BDD4E /* Build configuration list for PBXNativeTarget "PingJiu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA9B32721AE67E5006BDD4E /* Debug */,
+				9DA9B32821AE67E5006BDD4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DA9B32921AE67E5006BDD4E /* Build configuration list for PBXNativeTarget "PingJiuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA9B32A21AE67E5006BDD4E /* Debug */,
+				9DA9B32B21AE67E5006BDD4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DA9B32C21AE67E5006BDD4E /* Build configuration list for PBXNativeTarget "PingJiuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA9B32D21AE67E5006BDD4E /* Debug */,
+				9DA9B32E21AE67E5006BDD4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DA9B2F221AE67E3006BDD4E /* Project object */;
+}
