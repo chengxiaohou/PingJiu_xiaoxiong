@@ -1,0 +1,131 @@
+//
+//  PrefixHeader.pch
+//  PingJiu
+//
+//  Created by 小熊 on 2018/11/28.
+//  Copyright © 2018年 小熊. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "MBProgressHUD.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "Masonry.h"
+#import "MJRefresh.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "UIView+SDAutoLayout.h"
+#import "MBProgressHUD+Add.h"
+#import "UIView+ST.h"
+#import "EETableView.h"
+#import "NetworkManager.h"
+#import "TheTab.h"
+#import <Photos/Photos.h>
+#import "TheUser.h"
+#import "Worker.h"
+#import "UDManager.h"
+#import "BaseVC.h"
+#import "EEView.h"
+#import "EEImageView.h"
+#import "TVCell.h"
+#import "TheUser.h"
+#import "IMYWebView.h"
+#import "WebVC.h"
+#import "EEScrollView.h"
+#import "EETextField.h"
+#import "VDCameraAndPhotoTool.h"
+#import "TZImagePickerController.h"
+#import "TZImageManager.h"
+#import "NSString+MD5.h"
+#import "NewDetailVC.h"
+#import "EETabBarItem.h"
+
+
+#import "HomeVC.h"
+#import "NewsVC.h"
+#import "MineVC.h"
+#import "SPDetailVC.h"
+#import "PaywayView.h"
+#import "PayCell.h"
+#import "PayModel.h"
+#import <ReplayKit/ReplayKit.h>
+//#import <AlipaySDK/AlipaySDK.h>
+//#import <WXApi.h>
+#import "SheZhiVC.h"
+#import "ForgetPassWordVC.h"
+#import "XiuGaiMiMaVC.h"
+#import "MyOrderVC.h"
+#import "AddNewAddressVC.h"
+#import "MyAddressVC.h"
+#import "address.h"
+#import "MyOrderVC.h"
+#import "UserInfoVC.h"
+#import "LogInVC.h"
+#import "ForgetPassWordVC.h"
+#import "RegistVC.h"
+#import "OrderDetailVC.h"
+
+
+#define CorRad 4
+#define NET             [NetworkManager sharedManager]
+#define EEViewGreyColor     [UIColor colorWithRed:227/255.0 green:227/255.0 blue:227/255.0 alpha:1.0]
+#define SetImageViewImageWithURL_C(imageView, urlString, placeholder) \
+[imageView sd_setImageWithURL:[NSURL URLWithString:urlString] placeholderImage:[UIImage imageNamed:placeholder]];
+#define SetButtonImageWithURL_C(button, urlString, placeholder) \
+[button sd_setBackgroundImageWithURL:[NSURL URLWithString:urlString] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:placeholder]];
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_PAD (UI_USER_INTERFACE_IDIOM()== UIUserInterface
+//状态栏高度
+#define HitoStatusHeight [UIApplication sharedApplication].statusBarFrame.size.height
+//导航栏高度
+#define HitoNavHeight 44
+//顶部高度
+#define HitoTopHeight (HitoStatusHeight+HitoNavHeight)
+#define SafeAreaTopHeight (Height == 812.0 ? 88 : 64)
+#define SafeAreaBottomHeight (Height == 812.0 ? 34 : 0)
+
+
+
+
+
+
+#define PlaceHolderName @"td"
+#define IconHolderName  @"defaultavatar"
+#define BGGreyColor         [UIColor colorWithRed:243/255.0 green:246/255.0 blue:249/255.0 alpha:1/1.0]
+#define Window          [[UIApplication sharedApplication].delegate window]
+#define ThemeImageColor @"order_bnt.png"
+#define ThemeColor        HexColor(0xA92748)
+#define NavBackBtnColor HexColor(0xffffff)
+#define USER            [TheUser user]
+#define HexColor(h)     [UIColor colorWithRed:(((h & 0xFF0000) >> 16))/255.0 green:(((h &0xFF00) >>8))/255.0 blue:((h &0xFF))/255.0 alpha:1.0]
+#define Width           [UIScreen mainScreen].bounds.size.width
+#define Height          [UIScreen mainScreen].bounds.size.height
+
+#define TopVC           [Worker theTopVC]
+#define AFN_TimeOut     10
+#define SBLoginName @"LogOnVC"
+#define SBName @"Main"
+#define NOTI_DidLogout  @"退出登录"
+#define UD              [NSUserDefaults standardUserDefaults]
+#define USER_Cache @"缓存的用户模型"
+#define Nav_Fond        17
+#define NOTI_RequestWarning @"请求的业务逻辑没走通"
+#define NOTI_RequestError @"请求出错"
+#define ResponseCode    @"success"
+#define ResponseDatas   @"response"
+#define SuccessCode     @1
+#define Message @"info"
+#define FirstPage       1
+#define ErrorMessage    [Worker convertErrorMessage:[error localizedDescription]]
+
+#define KUserNewNotiWithUserInfo(...)  [[NSNotificationCenter defaultCenter] postNotificationName:@"KUserNewNoti" object:nil userInfo:__VA_ARGS__] //发送连接状态
+#define KUserAddNewNotiWithSelector(...)  [[NSNotificationCenter defaultCenter] addObserver:self selector:__VA_ARGS__ name:@"KUserNewNoti" object:nil] //接收连接状态刷新数据
+
+#define JPushAppKey  @"565d3825faba4be11d8959ea"
+#define JPushAppSecret  @"626863b08d1d7ec9eb6ea947"
+
+#define SYSURL  @"http://admin.sdhui.net/"
+#define BASEURL @""
+#endif /* PrefixHeader_pch */

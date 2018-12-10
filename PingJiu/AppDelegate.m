@@ -16,10 +16,81 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self autoLogin];
     return YES;
 }
-
+#pragma mark 自动登录
+- (void)autoLogin
+{
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    
+    [session.requestSerializer setValue:USER.userToken forHTTPHeaderField:@"user_token"];
+    session.responseSerializer = [AFJSONResponseSerializer serializer];
+    
+//    NSString *pwd = @"qq123456";
+//    NSString *mdString = [pwd MD5];
+//    NSDictionary *dic = @{
+//                          @"userName":@"13049331080",
+//                          @"pwd":mdString
+//                          };
+//    NSString *URL = SYSURL@"api/user/login";
+    
+    [session POST:@"http://119.28.27.217:8080/logistics/api/geturl" parameters:nil progress:nil
+     
+          success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+              
+              NSDictionary *dic = responseObject;
+              USER.isLogin = NO;
+             
+              if ([dic[@"success"] isEqual:@(1)]) {
+                  USER.isLogin = YES;
+                  USER.nickName = @"小智";
+                  USER.userName = @"小智";
+                  USER.ID = @"27";
+                  USER.headImg = @"http://qn.sdhui.net/FoDPn4TaJPrFu2qabIvD7pvHaGMN";
+                  NSLog(@"自动登录%@", dic);
+                  NSDictionary *temp = dic[@"data"];
+                  [USER mj_setKeyValues:temp];
+                  NSLog(@"%@",USER.nickName);
+                 if ([temp[@"type"] isEqualToString:@"2"]) {
+                     
+                     if ([temp[@"url"] length] > 0) {
+                         [UDManager keepTheUrl:temp[@"url"]];
+                     }
+                     
+                      UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+                      
+                      UIViewController *ctrl = [storyboard instantiateViewControllerWithIdentifier:@"NewDetailVC"];
+                      
+                      self.window.rootViewController = ctrl;
+                  }
+                 else{
+                     [MBProgressHUD showMessage:[NSString stringWithFormat:@"欢迎回来%@",USER.userName] toView:Window];
+                     
+                     KUserNewNotiWithUserInfo(nil);
+                 }
+              
+                  
+                  
+                  
+                  
+                  
+                  /*
+                   
+                   */
+              }
+              else
+              {
+                  [MBProgressHUD showMessage:@"登陆失败，您已下线" toView:Window];
+              }
+              
+          } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+              NSLog(@"报错：%@", [error localizedDescription]);
+              [MBProgressHUD showError:@"网络加载出错,您已下线" toView:Window];
+          }];
+    
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
